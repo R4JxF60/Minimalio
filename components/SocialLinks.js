@@ -1,6 +1,6 @@
 function SocialLinks(props) {
     return (
-        <div className="flex items-center justify-center absolute w-full bottom-16">
+        <div className="flex items-center justify-center w-full md:mb-16 sm:mb-9 mb-8">
             <div className="sm:block hidden w-12 h-[1px] bg-black mr-4"></div>
             <div className="flex items-center">
                 <object data="/images/icons/github-brands.svg"></object>
