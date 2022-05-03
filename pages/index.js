@@ -1,7 +1,10 @@
 import Navigation from "../components/Navigation";
 import Home from "../components/Home";
 import About from "../components/About";
-import Header from "../components/Header";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 function IndexPage() {
     return (
@@ -12,6 +15,10 @@ function IndexPage() {
             <div className="container mx-auto pl-9 pr-9 sm:p-0 z-0">
                 <Home />
                 <About />
+                <Projects />
+                <Skills />
+                <Contact />
+                <Footer />
             </div>
         </div>
     );
