@@ -10,10 +10,10 @@ function Navigation() {
                 </div>
                 <div className="h-6 w-6 bg-black sm:hidden block rounded-full"></div>
                 <div className="hidden flex-col sm:block">
-                    <a href="/about" className="sm:mr-9">About</a>
-                    <a href="/Skills" className="sm:mr-9">Skills</a>
-                    <a href="/Projects" className="sm:mr-9">Projects</a>
-                    <a href="/Contact">Contact</a>
+                    <a href="#about" className="sm:mr-9">About</a>
+                    <a href="#projects" className="sm:mr-9">Projects</a>
+                    <a href="#skills" className="sm:mr-9">Skills</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
         </React.Fragment>
