@@ -25,9 +25,14 @@ function About() {
                     <Tag tag="greenearth" />
                     <Tag tag="letsprotectournature" />
                 </div>
-                <div>
-                    <div className="rounded-full overflow-hidden w-64 h-64 bg-gray-300">
-                        
+                <div className="md:mt-16 mt-9">
+                    <div className="overflow-hidden bg-gray-300 h-40 w-40 block relative">
+                        <Image 
+                            src={"/images/me.png"} 
+                            width={2040}
+                            height={2040}
+                            layout={"intrinsic"}
+                        ></Image>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function Project(props) {
     const tags = props.tags;
@@ -12,11 +13,21 @@ function Project(props) {
     } 
 
     return (
-        <div className="md:flex flex-row block">
-            <div className="bg-gray-300 w-full h-[500px] md:w-[454px] md:h-[454px] md:mr-12">
-                
+        <div className="md:flex flex-row block mb-16">
+            <div className="w-full h-auto md:w-[454px] md:h-[454px] md:mr-12 overflow-hidden relative">
+                <div className={`bg-${props.color}-500/50 w-full h-full absolute z-10 flex items-center justify-center`}>
+                    <div className={`font-sen text-${props.color}-500 sm:text-5xl text-3xl bg-white rounded-full h-fit w-fit sm:p-8 p-5`}>hd</div>
+                </div>
+                <Image 
+                    src={props.src} 
+                    width={454}
+                    height={454}
+                    layout={"responsive"}
+                    alt={props.alt}
+                    className="blur-md"
+                ></Image>
             </div>
-            <div>
+            <div className="md:w-[55%] w-full">
                 <div className="flex flex-wrap mb-3 md:mt-0 mt-3">{tagItems}</div>
                 <h2 className="font-merriweather font-normal md:text-4xl text-3xl mb-1">{props.project || "Project"}</h2>
                 {createDescription(props.sub)}
