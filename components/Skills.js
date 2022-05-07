@@ -1,5 +1,6 @@
 import Text from "./Text";
 import Header from "./Header";
+import Skill from "./Skill";
 
 
 function Skills(props) {
@@ -18,6 +19,16 @@ function Skills(props) {
                         And also I have experience in responsive web development, UI/UX designing, HTML5, CSS3, Javascript(ES6+), and Typescript. Addition all these, I have experience in backend development with PHP and NodeJs.
                     </p>
                 </Text>
+            </div>
+            <div className="md:w-[38%] w-full md:mt-[304px] mt-16">
+                <div className="mt-12 sm:mt-16">
+                    <Skill skill="Frontend" width="w-[85%]"></Skill>
+                    <Skill skill="Backend" width="w-[77%]"></Skill>
+                    <Skill skill="UI/UX" width="w-[65%]"></Skill>
+                    <Skill skill="Javascript" width="w-[80%]"></Skill>
+                    <Skill skill="ReactJs" width="w-[78%]"></Skill>
+                    <Skill skill="NextJs" width="w-[73%]"></Skill>
+                </div>
             </div>
         </section>
     );

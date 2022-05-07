@@ -16,19 +16,17 @@ function IndexPage() {
     })
 
     return (
-        <div className="bg-white">
-            <div className="w-full sm:h-28 sm:p-0 pl-9 pr-9 fixed h-24 z-20 bg-white">
+        <div className="bg-white relative">
+            <div className="w-full sm:h-28 sm:p-0 pl-9 pr-9 fixed h-24 z-30 bg-white">
                 <Navigation />
             </div>
             <div className="container mx-auto pl-9 pr-9 sm:p-0 z-0" data-scroll-container>
-                <ScrollProvider config={{smooth: true}}>
                 <Home />
                 <About />
                 <Projects />
                 <Skills />
                 <Contact />
                 <Footer />
-                </ScrollProvider>
             </div>
         </div>
     );

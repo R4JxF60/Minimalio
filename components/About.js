@@ -6,7 +6,7 @@ import Tag from "./Tag";
 
 function About() {
     return (
-        <section className="md:flex justify-between  max-h-fit min-h-[100vh]" id="about">
+        <section className="md:flex justify-between  max-h-fit min-h-[100vh] h-screen" id="about">
             <div className="md:mt-52 mt-32 md:w-[52%] w-full">
                 <Header>About Me</Header>
                 <SubHeader>Eccentric Guy With Lonely Life.</SubHeader>
