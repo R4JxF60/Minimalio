@@ -8,6 +8,7 @@ module.exports = {
       sen: ["Sen", "sans-serif"],
       lato: ["Lato", "sans-serif"],
       merriweather: ['"Merriweather Sans"', "sans-serif"],
+      calling: ["TheCalling", "serif"]
     },
     screens: {
       "sm": "640px",
