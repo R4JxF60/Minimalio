@@ -16,13 +16,14 @@ function Contact(props) {
     const inputMessage = useRef(null);
 
     async function formHandler(event) {
+        event.preventDefault();
+        
         const data = { 
             name: inputName.current.value, 
             email: inputEmail.current.value, 
             message: inputMessage.current.value,
         };
 
-        event.preventDefault();
         const res = await fetch("/api/messages", {
             method: "POST",
             headers: {
@@ -48,18 +49,7 @@ function Contact(props) {
                         Currently I'm a third year computer science undergraduate and looking for freelancing works and internship oppertunities. However, If you need to say hello or ask any thing, just drop a message and I'll reach you!
                     </p>
                 </Text>
-            </div>
-            <div className="mt-16 w-full md:w-[38%] md:mt-[304px]">
-                <Text>
-                    <form onSubmit={formHandler}>
-                        <input ref={inputName} type="text" placeholder="Your name" className="border border-solid border-black w-full sm:p-4 p-3 placeholder:text-base sm:mb-3 mb-2"></input>
-                        <input ref={inputEmail} type="email" placeholder="Email address" className="border border-solid border-black w-full sm:p-4 p-3 placeholder:text-base sm:mb-3 mb-2"></input>
-                        <textarea ref={inputMessage} placeholder="Message" className="border border-solid border-black w-full sm:p-4 p-3 placeholder:text-base sm:mb-3 mb-2"></textarea>
-                        <div>
-                            <button type="submit" className="font-merriweather border border-solid sm:p-4 p-3 bg-black text-white text-base">Send message</button>
-                        </div>
-                    </form>
-                </Text>
+                <a href="mailto:rajithakumaraprog@gmail.com" target="_blank" className="font-merriweather block sm:p-4 p-3 bg-black text-white text-base w-fit md:mt-7 mt-5">Say Hello !</a>
             </div>
         </section>
     );
