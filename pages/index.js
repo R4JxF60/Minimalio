@@ -5,7 +5,11 @@ import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Background from "../components/Backgound";
 import ScrollProvider from "../context/Scroll.context";
+import ThemeProvider from "../context/Theme.context";
+import Quote from "../components/Quote";
+import Hero from "../components/Hero";
 
 
 import { useEffect, useRef } from "react";
@@ -16,19 +20,18 @@ function IndexPage() {
     })
 
     return (
-        <div className="bg-white relative">
-            <div className="w-full sm:h-28 sm:p-0 pl-9 pr-9 fixed h-24 z-30 bg-white">
-                <Navigation />
-            </div>
-            <div className="container mx-auto pl-9 pr-9 sm:p-0 z-0" data-scroll-container>
-                <Home />
+        <ThemeProvider>
+            <div className="bg-light-gray">
+                <Hero />
                 <About />
+                <Quote />
                 <Projects />
                 <Skills />
                 <Contact />
                 <Footer />
             </div>
-        </div>
+        </ThemeProvider>
+        
     );
 }
 

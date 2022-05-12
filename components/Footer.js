@@ -4,7 +4,7 @@ import SubHeader from "./SubHeader";
 
 function Footer(props) {
     return (
-        <section className="flex justify-between flex-col max-h-fit min-h-[100vh]" id="footer">
+        <section className="mx-auto pl-9 pr-9 sm:p-0 container flex justify-between flex-col max-h-fit min-h-[100vh] text-mid-black" id="footer">
             <div className="md:mt-52 mt-32 w-full">
                 <Header>Ok then, Bravo6 going dark!</Header>
                 <SubHeader>P.S. Design & Develop By Rajitha Kumara.</SubHeader>

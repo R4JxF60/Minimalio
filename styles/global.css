@@ -7,6 +7,16 @@
 /* importing typeface Lato */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
 
+
+@font-face {
+    font-family: 'TheCalling';
+    src: url('/fonts/TheCalling/TheCalling.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/TheCalling/TheCalling.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/TheCalling/TheCalling.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/TheCalling/TheCalling.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/TheCalling/TheCalling.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

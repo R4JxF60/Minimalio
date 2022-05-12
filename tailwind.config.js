@@ -8,6 +8,7 @@ module.exports = {
       sen: ["Sen", "sans-serif"],
       lato: ["Lato", "sans-serif"],
       merriweather: ['"Merriweather Sans"', "sans-serif"],
+      calling: ["TheCalling", "serif"]
     },
     screens: {
       "sm": "640px",
@@ -15,7 +16,16 @@ module.exports = {
       "lg": "1024px",
       "xl": "1164px",
     },
-    extends: {}
+    extend: {
+      colors: {
+        "light-blue": "#C6D4E1",
+        "mid-blue": "#B2C5DA",
+        "light-dark": "#262D35",
+        "mid-black": "#1e1f26",
+        "light-gray": "#f8f8fa",
+        "mid-gray": "#f4f4f8",
+      }
+    }
     
   },
   plugins: [],

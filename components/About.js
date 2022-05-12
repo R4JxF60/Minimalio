@@ -4,9 +4,34 @@ import SubHeader from "./SubHeader";
 import Text from "./Text";
 import Tag from "./Tag";
 
-function About() {
+import anime from "animejs";
+import { useEffect, useState } from "react";
+
+function About(props) {
+
+    const [tagCount, setTagCount] = useState(0);
+
+    useEffect(() => {
+        setTagCount(document.querySelectorAll('.tags').length);
+
+        const animation = anime({
+            targets: `.tags`,
+            translateY: [
+                {value: '-125%', duration: 1500, delay: anime.stagger(1000, {start: 500, from: anime.random(tagCount/3, tagCount)})},
+                {value: '125%', duration: 1},
+                {value: '0', duration: 2000}
+            ],
+            loop: true
+          });
+
+        return function() {
+            animation.remove(`.tags`)
+        }
+    })
+
+
     return (
-        <section className="md:flex justify-between  max-h-fit min-h-[100vh] h-screen" id="about">
+        <section className="container mx-auto pl-9 pr-9 sm:p-0 md:flex justify-between  max-h-fit min-h-[100vh] text-mid-black" id="about">
             <div className="md:mt-52 mt-32 md:w-[52%] w-full">
                 <Header>About Me</Header>
                 <SubHeader>Eccentric Guy With Lonely Life.</SubHeader>
@@ -24,14 +49,19 @@ function About() {
                     <Tag tag="rainlovers" />
                     <Tag tag="greenearth" />
                     <Tag tag="letsprotectournature" />
+                    <Tag tag="letsprotectournature" />
+                    <Tag tag="rainlovers" />
+                    <Tag tag="greenearth" />
+                    <Tag tag="letsprotectournature" />
                 </div>
-                <div className="md:mt-16 mt-9">
-                    <div className="overflow-hidden bg-gray-300 h-40 w-40 block relative">
+                <div className="md:mt-16 mt-9 mb-9">
+                    <div className="overflow-hidden h-40 w-40 block relative">
                         <Image 
                             src={"/images/me.png"} 
                             width={2040}
                             height={2040}
                             layout={"intrinsic"}
+                            className="hover:scale-125 ease-in-out duration-200"
                         ></Image>
                     </div>
                 </div>
