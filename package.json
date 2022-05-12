@@ -15,12 +15,15 @@
   "author": "Rajitha Kumara",
   "license": "ISC",
   "dependencies": {
+    "animejs": "^3.2.1",
     "locomotive-scroll": "^4.1.4",
     "next": "^12.1.5",
     "nodemailer": "^6.7.5",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "swr": "^1.3.0"
+    "react-tsparticles": "^2.0.6",
+    "swr": "^1.3.0",
+    "tsparticles": "^2.0.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",

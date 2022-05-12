@@ -27,18 +27,17 @@ function Navigation() {
                 <div className="mr-9">
                     <Link href={"/"}><a>R4JxF60</a></Link>
                 </div>
-                <div className="flex items-center w-fit">
+                <div className="flex items-center w-fit text-mid-black">
                     <div className="hidden flex-col sm:block">
                         <a href="#about" className="sm:mr-9">About</a>
                         <a href="#projects" className="sm:mr-9">Projects</a>
                         <a href="#skills" className="sm:mr-9">Skills</a>
                         <a href="#contact">Contact</a>
                     </div>
-                    <ThemeToggle />
-                     <img src="/images/icons/menu.svg" ref={toggleIcon} alt={"menu icon"} className="sm:hidden block cursor-pointer select-none" onClick={toggleMobileNav}></img>
+                     <img src="/images/icons/menu.svg" ref={toggleIcon} alt={"menu icon"} className="sm:hidden block cursor-pointer select-none ease-in-out duration-200" onClick={toggleMobileNav}></img>
                 </div>
             </div>
-            <div className={`bg-white h-screen w-full sm:hidden left-0 top-24 absolute ${mobileNavStatus}`} ref={mobileNav}>
+            <div className={`h-screen w-full sm:hidden left-0 top-24 absolute bg-light-gray text-mid-black ease-in-out duration-200 ${mobileNavStatus}`} ref={mobileNav}>
                 <div className="flex flex-col items-center justify-evenly h-1/2 font-merriweather text-lg font-normal container mx-auto">
                     <a href="#about" onClick={toggleMobileNav}>About</a>
                     <a href="#projects" onClick={toggleMobileNav}>Projects</a>

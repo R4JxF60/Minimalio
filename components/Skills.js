@@ -4,8 +4,9 @@ import Skill from "./Skill";
 
 
 function Skills(props) {
+
     return (
-        <section className="md:flex justify-between max-h-fit min-h-[100vh]" id="skills">
+        <section className="mx-auto pl-9 pr-9 sm:p-0 container md:flex justify-between max-h-fit min-h-[100vh] text-mid-black" id="skills">
             <div className="md:mt-52 mt-32 w-full md:w-[52%]">
                 <Header>Skills</Header>
                 <Text>
