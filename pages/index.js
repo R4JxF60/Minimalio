@@ -20,17 +20,15 @@ function IndexPage() {
     })
 
     return (
-        <ThemeProvider>
-            <div className="bg-light-gray">
+        <div className="bg-light-gray" data-scroll-container>
                 <Hero />
-                <About />
-                <Quote />
-                <Projects />
-                <Skills />
-                <Contact />
-                <Footer />
+                    <About />
+                    <Quote />
+                    <Projects />
+                    <Skills />
+                    <Contact />
+                    <Footer />
             </div>
-        </ThemeProvider>
         
     );
 }

@@ -7,7 +7,7 @@ function Footer(props) {
         <section className="mx-auto pl-9 pr-9 sm:p-0 container flex justify-between flex-col max-h-fit min-h-[100vh] text-mid-black" id="footer">
             <div className="md:mt-52 mt-32 w-full">
                 <Header>Ok then, Bravo6 going dark!</Header>
-                <SubHeader>P.S. Design & Develop By Rajitha Kumara.</SubHeader>
+                <SubHeader>P.S. Designed & Developed By Rajitha Kumara.</SubHeader>
                 <div className="font-sen font-normal sm:text-8xl text-7xl sm:mt-16 mt-9">: )</div>
             </div>
             <div className="relative">
