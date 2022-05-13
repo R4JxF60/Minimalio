@@ -39,7 +39,7 @@ function Contact(props) {
             console.log("err");
         }
     }
-
+    
     return (
         <section className="mx-auto pl-9 pr-9 sm:p-0 container md:flex justify-between  max-h-fit min-h-[100vh]" id="contact">
             <div className="md:mt-52 mt-32 w-full md:w-[52%]">
@@ -52,6 +52,7 @@ function Contact(props) {
                 <a href="mailto:rajithakumaraprog@gmail.com" target="_blank" className="font-merriweather block sm:p-4 p-3 bg-mid-black text-light-gray text-base w-fit md:mt-7 mt-5">Say Hello !</a>
             </div>
         </section>
+        
     );
 }
 

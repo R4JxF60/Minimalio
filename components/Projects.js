@@ -26,7 +26,7 @@ function Projects(props) {
                         sub={"Slides presenting application."}    
                         link={"https://google.com"}
                         src={"/images/presenter.png"}
-                        color={"bg-dark-500/50"}
+                        color={"bg-mid-black/50"}
                         logo="Presenter"
                     />
                 </Text>
