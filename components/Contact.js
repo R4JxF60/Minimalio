@@ -13,7 +13,7 @@ function Contact(props) {
                     </p>
                 </Text>
                 <a href="mailto:rajithakumaraprog@gmail.com" target="_blank" className="font-merriweather block sm:p-4 p-3 bg-mid-black text-light-gray text-base w-fit md:mt-7 mt-5">Say Hello !</a>
-                <div title="Email address of Rajitha Kumara" className="md:mt-52 mt-5"><a href="mailto:rajithakumaraprog@gmail.com" target="_blank" className="cursor-pointer hover:scale-125 ease-in-out duration-200 font-lato font-light text-base"><img src="/images/icons/email.svg" alt="email-icon" className="inline-block mr-2"></img>rajithakumaraprog@gmail.com</a></div>
+                <div title="Email address of Rajitha Kumara" className="md:mt-52 mt-5"><a href="mailto:rajithakumaraprog@gmail.com" target="_blank" className="cursor-pointer font-lato font-light text-base text-black"><img src="/images/icons/email.svg" alt="email-icon" className="inline-block mr-2"></img>rajithakumaraprog@gmail.com</a></div>
             </div>
             <div className="md:w-[38%] w-full md:mt-[304px] mt-16 h-full flex items-center justify-center">
                 <img src="/images/say_hi.svg" alt="say hi illustrator"></img>
