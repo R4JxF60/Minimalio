@@ -1,5 +1,3 @@
-import { useRef, useEffect, useState } from "react";
-import { ThemeContext } from "../context/Theme.context";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
@@ -7,11 +5,6 @@ import { loadFull } from "tsparticles";
 function Background(props) {
 
     const particlesInit = async (main) => {
-        console.log(main);
-    
-        // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
         await loadFull(main);
       };
     
@@ -56,11 +49,11 @@ function Background(props) {
                         },
                         particles: {
                         color: {
-                            value: "#000000",
+                            value: "#1e1f26",
                         },
                         links: {
-                            color: "#555555",
-                            distance: 200,
+                            color: "#262D35",
+                            distance: 230,
                             enable: true,
                             opacity: 0.5,
                             width: 1,
@@ -83,7 +76,7 @@ function Background(props) {
                             enable: true,
                             area: 250,
                             },
-                            value: 10,
+                            value: 6,
                         },
                         opacity: {
                             value: 0.5,
@@ -92,7 +85,7 @@ function Background(props) {
                             type: "circle",
                         },
                         size: {
-                            value: { min: 1, max: 5 },
+                            value: { min: 1, max: 3 },
                         },
                         },
                         detectRetina: true,

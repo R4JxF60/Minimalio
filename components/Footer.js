@@ -8,11 +8,13 @@ function Footer(props) {
             <div className="md:mt-52 mt-32 w-full">
                 <Header>Ok then, Bravo6 going dark!</Header>
                 <SubHeader>P.S. Designed & Developed By Rajitha Kumara.</SubHeader>
+                <div className="font-lato font-base font-normal text-mid-black md:w-[52%] w-full">Contribution to icons used in this website <a className="underline" href="https://iconscout.com/" target="_blank">www.iconscout.com</a> and contribution to illustrator used in <a className="underline" href="#contact" target="_self">Contact</a> section <a className="underline" href="https://undraw.co/" target="_blank">www.undraw.co</a>.</div>
                 <div className="font-sen font-normal sm:text-8xl text-7xl sm:mt-16 mt-9">: )</div>
             </div>
-            <div className="relative">
+            <div className="w-full md:mt-52 mt-32">
                 <SocialLinks />
             </div>
+            
             
         </section>
     );

@@ -1,45 +1,8 @@
-import { useState, useRef } from "react";
 import Header from "./Header";
 import Text from "./Text";
-import useSWR from "swr";
 
 function Contact(props) {
 
-    // state of the form
-    const [name, setName] = useState(null);
-    const [email, setEmail] = useState(null);
-    const [message, setMessage] = useState(null);
-
-    // set refs
-    const inputName = useRef(null);
-    const inputEmail = useRef(null);
-    const inputMessage = useRef(null);
-
-    async function formHandler(event) {
-        event.preventDefault();
-        
-        const data = { 
-            name: inputName.current.value, 
-            email: inputEmail.current.value, 
-            message: inputMessage.current.value,
-        };
-
-        const res = await fetch("/api/messages", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        });
-        //console.log(inputName.current.value, inputEmail.current.value, inputMessage.current.value);
-        if(res.ok) {
-            const decodedRes = await res.json();
-            console.log(decodedRes);
-        }else {
-            console.log("err");
-        }
-    }
-    
     return (
         <section className="mx-auto pl-9 pr-9 sm:p-0 container md:flex justify-between  max-h-fit min-h-[100vh]" id="contact">
             <div className="md:mt-52 mt-32 w-full md:w-[52%]">
@@ -50,6 +13,10 @@ function Contact(props) {
                     </p>
                 </Text>
                 <a href="mailto:rajithakumaraprog@gmail.com" target="_blank" className="font-merriweather block sm:p-4 p-3 bg-mid-black text-light-gray text-base w-fit md:mt-7 mt-5">Say Hello !</a>
+                <div title="Email address of Rajitha Kumara" className="md:mt-52 mt-5"><a href="mailto:rajithakumaraprog@gmail.com" target="_blank" className="cursor-pointer hover:scale-125 ease-in-out duration-200 font-lato font-light text-base"><img src="/images/icons/email.svg" alt="email-icon" className="inline-block mr-2"></img>rajithakumaraprog@gmail.com</a></div>
+            </div>
+            <div className="md:w-[38%] w-full md:mt-[304px] mt-16 h-full flex items-center justify-center">
+                <img src="/images/say_hi.svg" alt="say hi illustrator"></img>
             </div>
         </section>
         
