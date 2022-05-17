@@ -20,6 +20,7 @@ function IndexPage() {
                 <link rel="canonical" href="https://rajithakumara.tk" />
                 <title>Rajitha Kumara | Full Stack Web Developer | Freelancer</title>
                 <meta name="description" content="Rajitha Kumara is a design minded software engineer focus on building high quality, scalable front end and back end web solutions. And also a nature lover and a photographer." />
+                <meta name="google-site-verification" content="gR5KVxjAVWK8AghnOO8fuF56PrijLVtKLAkNgdbtkWc" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
