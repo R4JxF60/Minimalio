@@ -36,7 +36,7 @@ function About(props) {
                 <Header>About Me</Header>
                 <SubHeader>Eccentric Guy With Lonely Life.</SubHeader>
                 <Text>
-                    <p>Haloo, I'm Rajitha Kumara from lovely island Sri Lanka. For the past three years I have been studying computer science as my major in University of Colombo School of Computing. As an engineer my field of expertise at full stack web development and mobile app development. Also I'm very much interesting at product design and UI/UX desing fields. Addition to all these stuffs, I love backpacking and photography. Specially, I am a huge rain lover.</p>
+                    <p>Haloo, I'm Rajitha Kumara from the lovely island Sri Lanka. For the past three years, I have been studying computer science as my major at the University of Colombo School of Computing. As an engineer my field of expertise at front-end and back-end web development. Also, I'm very much interested in product design and UI/UX design fields. In addition to all this stuff, I love backpacking and photography. Especially, I am a huge fan of rain.</p>
                 </Text>
             </div>
             <div className="md:w-[38%] w-full md:mt-80 mt-16">
@@ -46,22 +46,22 @@ function About(props) {
                     <Tag tag="rainlovers" />
                     <Tag tag="greenearth" />
                     <Tag tag="letsprotectournature" />
-                    <Tag tag="rainlovers" />
-                    <Tag tag="greenearth" />
-                    <Tag tag="letsprotectournature" />
-                    <Tag tag="letsprotectournature" />
-                    <Tag tag="rainlovers" />
-                    <Tag tag="greenearth" />
-                    <Tag tag="letsprotectournature" />
+                    <Tag tag="coding" />
+                    <Tag tag="backpacking" />
+                    <Tag tag="travelling" />
+                    <Tag tag="photography" />
+                    <Tag tag="adventure" />
+                    <Tag tag="lovelysrilanka" />
                 </div>
                 <div className="md:mt-16 mt-9 mb-9">
-                    <div className="overflow-hidden h-40 w-40 block relative">
+                    <div className="overflow-hidden h-40 w-40 block relative" title="Rajitha Kumara">
                         <Image 
-                            src={"/images/me.png"} 
+                            src={"/images/rajitha.png"} 
                             width={2040}
                             height={2040}
                             layout={"intrinsic"}
                             className="hover:scale-125 ease-in-out duration-200"
+                            alt="Rajitha Kumara"
                         ></Image>
                     </div>
                 </div>
