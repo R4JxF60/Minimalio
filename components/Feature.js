@@ -1,9 +1,6 @@
-import React from "react";
-
-
-function Feature({children}) {
+function Feature({children, className}) {
     return(
-    <div className="flex justify-center align-middle w-full bg-mid-black">
+    <div className= {`${className || ''} h-full flex items-center justify-center`}>
         {children}
     </div>);
 };
