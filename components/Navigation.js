@@ -37,7 +37,7 @@ function Navigation() {
                      <img src="/images/icons/menu.svg" ref={toggleIcon} alt={"menu icon"} className="sm:hidden block cursor-pointer select-none ease-in-out duration-200" onClick={toggleMobileNav}></img>
                 </div>
             </div>
-            <div className={`h-screen w-full sm:hidden left-0 top-24 absolute bg-light-gray text-mid-black ease-in-out duration-200 ${mobileNavStatus}`} ref={mobileNav}>
+            <div className={`h-screen w-full sm:hidden left-0 top-[136px] absolute bg-light-gray text-mid-black ease-in-out duration-200 ${mobileNavStatus}`} ref={mobileNav}>
                 <div className="flex flex-col items-center justify-evenly h-1/2 font-merriweather text-lg font-normal container mx-auto">
                     <a href="#about" onClick={toggleMobileNav}>About</a>
                     <a href="#projects" onClick={toggleMobileNav}>Projects</a>
