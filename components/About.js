@@ -3,32 +3,9 @@ import Header from "./Header";
 import SubHeader from "./SubHeader";
 import Text from "./Text";
 import Tag from "./Tag";
-
-import anime from "animejs";
-import { useEffect, useState } from "react";
+import TagBoard from "./TagBoard";
 
 function About(props) {
-
-    const [tagCount, setTagCount] = useState(0);
-
-    useEffect(() => {
-        setTagCount(document.querySelectorAll('.tags').length);
-
-        const animation = anime({
-            targets: `.tags`,
-            translateY: [
-                {value: '-125%', duration: 1500, delay: anime.stagger(1000, {start: 500, from: anime.random(tagCount/3, tagCount)})},
-                {value: '125%', duration: 1},
-                {value: '0', duration: 2000}
-            ],
-            loop: true
-          });
-
-        return function() {
-            animation.remove(`.tags`)
-        }
-    })
-
 
     return (
         <section className="container mx-auto pl-9 pr-9 sm:p-0 md:flex justify-between  max-h-fit min-h-[100vh] text-mid-black" id="about">
@@ -40,19 +17,7 @@ function About(props) {
                 </Text>
             </div>
             <div className="md:w-[38%] w-full md:mt-80 mt-16">
-                <div className="flex flex-wrap h-fit w-full">
-                    <Tag tag="nature" />
-                    <Tag tag="mothernature"/>
-                    <Tag tag="rainlovers" />
-                    <Tag tag="greenearth" />
-                    <Tag tag="letsprotectournature" />
-                    <Tag tag="coding" />
-                    <Tag tag="backpacking" />
-                    <Tag tag="travelling" />
-                    <Tag tag="photography" />
-                    <Tag tag="adventure" />
-                    <Tag tag="lovelysrilanka" />
-                </div>
+                <TagBoard tags={["nature", "mothernature", "rainlovers", "greenearth", "letsprotectournature", "coding", "backpacking", "travelling", "photography", "adventure", "lovelysrilanka"]} prefix="about"/>
                 <div className="md:mt-16 mt-9 mb-9">
                     <div className="overflow-hidden h-40 w-40 block relative" title="Rajitha Kumara">
                         <Image 
