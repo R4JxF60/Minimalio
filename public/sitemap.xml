@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
    <url>
       <loc>https://rajithakumara.tk/</loc>
-      <lastmod>2022-05-17</lastmod>
+      <lastmod>2022-09-10</lastmod>
    </url>
    <url>
       <loc>https://rajithakumara.tk/#about</loc>
       <image:image>
         <image:loc>http://example.com/images/rajitha.png</image:loc>
       </image:image>
-      <lastmod>2022-05-17</lastmod>
+      <lastmod>2022-09-10</lastmod>
    </url>
    <url>
       <loc>https://rajithakumara.tk/#projects</loc>
-      <lastmod>2022-05-17</lastmod>
+      <lastmod>2022-09-10</lastmod>
    </url>
    <url>
       <loc>https://rajithakumara.tk/skills</loc>
-      <lastmod>2022-05-17</lastmod>
+      <lastmod>2022-09-10</lastmod>
    </url>
    <url>
       <loc>https://rajithakumara.tk/contact</loc>
-      <lastmod>2022-05-17</lastmod>
+      <lastmod>2022-09-10</lastmod>
    </url>
 </urlset>
